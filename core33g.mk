@@ -24,8 +24,8 @@ $(call inherit-product-if-exists, vendor/samsung/core33g/core33g-vendor.mk)
 $(call inherit-product, device/samsung/scx30g-common/common.mk)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 480
+TARGET_SCREEN_HEIGHT := 1024
+TARGET_SCREEN_WIDTH := 600
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
@@ -57,7 +57,7 @@ PRODUCT_PACKAGES += \
 
 # sdcardfs
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sys.sdcardfs=true
+#	ro.sys.sdcardfs=true
 
 # WiFi
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
@@ -67,4 +67,4 @@ PRODUCT_NAME := full_core33g
 PRODUCT_DEVICE := core33g
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SM-G360H
+PRODUCT_MODEL := SM-T113NU
