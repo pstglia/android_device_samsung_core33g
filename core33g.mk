@@ -52,8 +52,8 @@ PRODUCT_PACKAGES += \
 	ueventd.sc8830.rc
 
 # RIL
-PRODUCT_PACKAGES += \
-	rild.rc
+#PRODUCT_PACKAGES += \
+#	rild.rc
 
 # sdcardfs
 PRODUCT_PROPERTY_OVERRIDES += \
