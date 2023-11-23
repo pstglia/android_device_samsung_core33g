@@ -196,10 +196,10 @@ on property:ro.config.ksm.support=true
     write /sys/kernel/mm/ksm/sleep_millisecs 500
     write /sys/kernel/mm/ksm/run   1
 
-service charge /bin/charge
+service charger /sbin/healthd -c
     class charger
-    user root
-    oneshot
+    critical
+    seclabel u:r:healthd:s0
 
 on property:persist.modem.w.enable=1
     symlink /dev/spipe_w1 /dev/vbpipe1
